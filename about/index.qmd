@@ -1,0 +1,35 @@
+---
+title: "About Me"
+format: html
+---
+
+Hi, I'm Jialu (Jayleen)  Jiang.
+
+I'm a junior at **Mount Holyoke College**, majoring in **Mathematics** with a deep interest in **applied math**, **statistical inference**, and **disease modeling**. I’m passionate about understanding the world through numbers and theory, and I’ve worked on a variety of research projects spanning:
+
+-  **COVID-19 transmission modeling** 
+-  **EEG-based speech processing** analysis with mTRF models
+-  **Statistical inference on network data**, including respondent-driven sampling and online platform behavior
+
+I’m also experienced in **LaTeX**, **R**, **Python**, **MATLAB**, and **Java**, and I’ve worked as a **Teaching Assistant** and grader across calculus, statistics, and computer science courses.
+
+## Current Research
+
+- Summer Research Assistant at Mount Holyoke College
+- Speech Processing, EEG
+- Python + MATLAB
+
+
+## Education
+
+**Mount Holyoke College** (2023–2027)  
+B.A. Mathematics | GPA: 3.99 / 4.00  
+Relevant coursework: Real Analysis, Mathematical Statistics, Probability, Optimization  
+**Academic Advisor**: Professor [Tim Chumley](https://tchumley.mtholyoke.edu)
+
+## Get in Touch
+
+- Email: [jiang37j@mtholyoke.edu](mailto:jiang37j@mtholyoke.edu)  
+- GitHub: [jayleenjiang](https://github.com/jayleenjiang)  
+
+

@@ -1,0 +1,34 @@
+---
+title: "Jayleen Jiang"
+image: static/img/profile.jpg
+toc: false
+about: 
+  template: trestles
+  image-shape: round
+  image-width: 15em
+  links:
+    - text: GitHub
+      href: https://github.com/jayleenjiang
+      icon: github
+    - text: Email
+      href: mailto:jiang37j@mtholyoke.edu
+      icon: envelope-fill
+    - text: Linkedin
+---
+
+Hi there!
+
+I'm **Jialu (Jayleen) Jiang**, a mathematics major at Mount Holyoke College with a passion for **applied mathematics**, **neural network**, and **disease modeling**. I love building bridges between data and theory, whether through simulating infectious disease dynamics, working with real-world social network data, or diving into PDEs and optimization problems.
+
+Currently, I'm involved in multiple research projects ranging from COVID-19 modeling to EEG-based speech analysis. I’m also a Teaching Assistant at Mount Holyoke College and have graded and tutored across calculus, statistics, and computer science courses.
+
+
+
+### Current Role
+
+Undergraduate Researcher 
+
+- Mount Holyoke College Department of Mathematics & Statistics
+- Collaborating with Professor Ben Pittman-Polletta on network-based statistical models
+- EEG + mTRF analysis for speech perception (Python & MATLAB)
+

@@ -1,0 +1,26 @@
+{
+  "publications/index.qmd": {
+    "index.html": "f6baa273"
+  },
+  "projects/index.qmd": {
+    "index.html": "10213928"
+  },
+  "index.qmd": {
+    "index.html": "d5b52949"
+  },
+  "blog/index.qmd": {
+    "index.html": "d9c74d08"
+  },
+  "others/index.qmd": {
+    "index.html": "b699143e"
+  },
+  "about/index.qmd": {
+    "index.html": "e11374e8"
+  },
+  "teaching/index.md": {
+    "index.html": "a3c717fe"
+  },
+  "teaching/index.qmd": {
+    "index.html": "46df40e3"
+  }
+}

@@ -1,0 +1,52 @@
+---
+title: "Teaching Assistant"
+format: html
+---
+
+Being a math TA has been one of the most valuable and fulfilling parts of my college journey. 
+
+I find immense satisfaction in helping others understand complex concepts, grow confidence in problem-solving, and develop curiosity and passion in mathematics.
+
+
+## Experience
+
+**MATH 102 – Calculus II**  
+Mount Holyoke College | Spring 2025  
+
+- Held weekly office hours and individual tutoring sessions       
+- Graded assignments and provided feedback on 10+ quizzes        
+- Assisted students with R, simulation studies, and interpretation of statistical results
+
+**STAT 242 – Intermediate Statistics**   
+Mount Holyoke College |  Fall 2024    
+
+- Held weekly office hours and individual tutoring sessions       
+- Graded assignments and provided feedback on 10+ quizzes          
+- Assisted students with R, simulation studies, and interpretation of statistical results
+
+**MATH 101 – Calculus I**   
+Mount Holyoke College | Spring 2024  
+
+- Served as TA for a class of 24 students       
+- Conducted over 40 hours of office hours and 1-on-1 help      
+- Gave feedback to the professor weekly to adjust pacing and class engagement
+
+**A-Level Mathematics & Economics**
+Vision Academy | Summer 2023
+
+
+## Notes & Materials
+
+Here are some of the notes, visual aids, and walkthroughs I've created during my time as a TA:
+
+- [Intro to R: Basics & Data Wrangling (PDF)](#)
+- [Simulation Walkthrough: Central Limit Theorem (PDF)](#)
+- [Problem-Solving Tips for Calc I Students (PDF)](#)
+
+
+## Thoughts
+
+I really enjoy teaching, not only because I love math, but because I love seeing people light up when things finally make sense.  
+I believe teaching is a form of empathy, it is the ability to understand how someone else thinks, and help build a bridge from confusion to clarity.  
+I hope to continue taking on teaching and mentoring roles in my future career, wherever that path takes me.
+

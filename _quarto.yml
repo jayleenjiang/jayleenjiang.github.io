@@ -1,0 +1,46 @@
+
+project:
+  type: website
+  output-dir: build
+  resources:
+    - static/fonts/**
+    - CNAME           # ensures custom‑domain file lands in gh‑pages root
+
+website:
+  title: "Jayleen Jiang"
+  favicon: /static/img/favicon-32.png
+  open-graph: true
+  site-url: "https://www.nikosirmpilatze.com/"
+  image: /static/img/profile.jpg
+  description: "Jayleen Jiang's personal website"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about/index.qmd
+        text: About
+      - href: publications/index.qmd
+        text: Reserach
+      - href: projects/index.qmd
+        text: Projects
+      - href: teaching/index.qmd
+        text: TA
+      - href: others/index.qmd
+        text: Others
+
+
+    right:
+      - icon: github
+        href: https://github.com/jayleenjiang
+      - icon: mastodon
+        href: https://neuromatch.social/@niksirbi
+
+format:
+  html:
+    theme:
+      light: [flatly, styles.scss]
+      dark: [darkly, styles-dark.scss]
+    toc: true
+    page-layout: full
+    mainfont: "Barlow"
+    monofont: "JetBrains Mono"

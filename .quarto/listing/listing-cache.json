@@ -1,0 +1,15 @@
+{
+  "listingMap": {
+    "publications/index.qmd": [
+      "featured.yml",
+      "publications.yml"
+    ],
+    "projects/index.qmd": [
+      "active.yml",
+      "past.yml"
+    ],
+    "blog/index.qmd": [
+      "professional.yml"
+    ]
+  }
+}
