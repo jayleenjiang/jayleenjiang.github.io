@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: Mathematics Major | <a href='/'>Mount Holyoke College</a>
+subtitle: 
 
 profile:
   align: right
-  image: pic.jpg
+  image: head.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Mount Holyoke College</p>
@@ -25,11 +25,17 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I'm Jayleen Jiang, a junior majoring in Mathematics at [Mount Holyoke College](https://www.mtholyoke.edu).
+Hi! 👋 I'm **Jayleen Jiang**, a junior majoring in Mathematics at  [Mount Holyoke College](https://www.mtholyoke.edu).
 
-I'm interested in applied mathematics and computational science, particularly in Differential Equations and it's application in interdispelocary research. I'm seeking for RA opportunity in Summer 2026.
+I’m broadly interested in applied mathematics and computational science, with a particular focus on probability theory, differential equations, and numerical methods. I like building mathematical models and using computation to understand complex systems. 
 
+I’m actively looking for **RA opportunities** for Summer 2026, especially in applied mathematics, PDEs, computational modeling, or related interdisciplinary work. Feel free to explore my [projects](/projects/)  to learn more about what I’ve been working on.
 
-### Current Role 
+Beyond work, I enjoy reading detective fiction, writing blogs and short novels.
 
-I'm currently working under Professor [Yao Li](https://sites.google.com/umass.edu/liyao/) at UMAss Amherst on simulating the resonant nonlinear Schrödinger equation using C++. Feel free to explore my [projects](/projects/) to learn more about my work.
+### 🎓 Education
+Mount Holyoke College | B.A. in Mathematics
+Sep 2023 – May 2027
+
+### 🔬 Current Work 
+Currently, I’m working with Professor [Yao Li](https://sites.google.com/umass.edu/liyao/) at UMass Amherst on numerical simulations of the resonant nonlinear Schrödinger equation using C++. 
