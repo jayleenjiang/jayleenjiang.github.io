@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       
       - name: Install system dependencies
         run: |
@@ -38,21 +40,16 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.3'
           bundler-cache: true
-          cache-version: 0
       
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
       
-      - name: Install dependencies
-        run: |
-          bundle install
-      
       - name: Build with Jekyll
         run: |
-          JEKYLL_ENV=production bundle exec jekyll build --baseurl ""
+          bundle exec jekyll build --baseurl ""
         env:
           JEKYLL_ENV: production
       
