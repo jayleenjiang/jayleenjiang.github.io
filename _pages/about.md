@@ -2,12 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: Mathematics Major | <a href='https://www.mtholyoke.edu/'>Mount Holyoke College</a>
+subtitle: Mathematics Major | <a href='/'>Mount Holyoke College</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image: pic.jpg
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>Mount Holyoke College</p>
     <p>50 College St.</p>
@@ -25,28 +25,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I'm Jayleen Jiang, a mathematics major at Mount Holyoke College with a passion for computational modeling and statistical analysis.
+Hi! I'm Jayleen Jiang, a junior majoring in Mathematics at [Mount Holyoke College](https://www.mtholyoke.edu).
 
-My research interests lie at the intersection of mathematics and computational science, particularly in:
-- **Stochastic Differential Equations**: Numerical methods and adaptive timestep algorithms
-- **Statistical Modeling**: Machine learning applications and ensemble methods
-- **Evolutionary Dynamics**: Mathematical frameworks for biological systems
+I'm interested in applied mathematics and computational science, particularly in Differential Equations and it's application in interdispelocary research. I'm seeking for RA opportunity in Summer 2026.
 
-### Current Projects
 
-I'm actively involved in several research projects:
-- Simulating the resonant nonlinear Schrödinger equation using C++ with adaptive timestep methods
-- Analyzing college student mental health data using logistic regression, decision trees, and random forests
-- Modeling altruism evolution through differential equations and Hamilton's Rule
+### Current Role 
 
-### Academic Background
-
-At Mount Holyoke College, I've developed strong foundations in both theoretical mathematics and computational methods. My coursework includes advanced topics in differential equations, statistics, MCMC methods, cryptography, and numerical analysis.
-
-### Skills & Tools
-
-**Programming Languages**: Python, R, C++, LaTeX  
-**Statistical Analysis**: Regression models, classification methods, ensemble techniques  
-**Mathematical Modeling**: Numerical simulations, stochastic processes, ODEs/SDEs  
-
-Feel free to explore my [projects](/projects/) to learn more about my work, or reach out if you'd like to discuss research or collaboration opportunities!
+I'm currently working under Professor [Yao Li](https://sites.google.com/umass.edu/liyao/) at UMAss Amherst on simulating the resonant nonlinear Schrödinger equation using C++. Feel free to explore my [projects](/projects/) to learn more about my work.
