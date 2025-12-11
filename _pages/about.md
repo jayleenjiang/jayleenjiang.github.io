@@ -29,18 +29,17 @@ Hi!
 
 I'm Jayleen Jiang, a junior majoring in Mathematics at  [Mount Holyoke College](https://www.mtholyoke.edu).
 
-I’m broadly interested in **applied mathematics** and **computational science**, with a focus on probability theory, differential equations, and numerical methods. I like building mathematical models and using computation to understand complex systems. 
+I’m broadly interested in applied mathematics and computational science, with a focus on probability theory, differential equations, and numerical methods. I like building mathematical models and using computation to understand complex systems. 
 
-I’m actively looking for **RA opportunities** for **Summer 2026**. Feel free to explore my [projects](/projects/)  to learn more about what I’ve been working on.
+I’m actively looking for RA opportunities for Summer 2026. Feel free to explore my [projects](/projects/)  to learn more about what I’ve been working on.
 
 Beyond work, I enjoy reading detective fiction, writing blogs and short novels.
-
 
 
 ### Education
 Mount Holyoke College | B.A. in Mathematics   
 Sep 2023 – May 2027  
-Advisor: Prof. [Timothy Chumley](https://tchumley.mtholyoke.edu)
+Advisor:  
 
 
 ### Current Work 
