@@ -49,12 +49,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+            },},{id: "news-i-attended-the-women-in-mathematics-in-new-england-2025-conference-and-gave-a-talk-about-my-work-on-neural-dynamics-of-word-segmentation",
+          title: 'I attended the Women in Mathematics in New England 2025 conference and gave...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-i-finished-all-my-finals-in-fall-2025-️",
+          section: "News",},{id: "news-i-finished-all-my-finals-in-fall-2025-️",
           title: 'I finished all my finals in Fall 2025 ! ✌️',
           description: "",
           section: "News",},{id: "projects-project-1",
