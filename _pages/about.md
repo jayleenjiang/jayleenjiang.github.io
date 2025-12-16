@@ -27,7 +27,7 @@ latest_posts:
 
 Hi! 👋
 
-I am Jayleen, and I am a junior majoring in Mathematics at  [Mount Holyoke College](https://www.mtholyoke.edu).
+I am Jayleen, and I am a junior majoring in Mathematics at  [Mount Holyoke College](https://www.mtholyoke.edu). You can view my cv here. 
 
 I'm exploring my interests in applied mathematics and computational science, particularly in areas like applied probability, differential equations, and numerical methods. I enjoy learning how to build mathematical models and use computation to better understand complex systems. 
 
