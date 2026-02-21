@@ -27,9 +27,9 @@ latest_posts:
 
 Hi! I am Jayleen, and I am a junior majoring in Mathematics at  [Mount Holyoke College](https://www.mtholyoke.edu). You can view my cv here. 
 
-I'm exploring my interests in applied mathematics and computational science, particularly in areas like **applied probability, differential equations, and numerical methods**. I enjoy learning how to build mathematical models and use computation to better understand complex systems. 
+I'm exploring my interests in applied mathematics and computational science, particularly in applied probability, partial differential equations, and dynamical systems. 
 
-I'm hoping to pursue a PhD in Mathematics starting in Fall 2027, and I'm currently looking for **research opportunities for Summer 2026** to gain more experience in these areas. Feel free to check out my [research](/research/) experience and [projects](/projects/) to see what I've been working on so far. 
+I'm planning to apply for PhD programs in (Applied) Mathematics starting in Fall 2027. Currently, I'm working with Professor [Yao Li](https://sites.google.com/umass.edu/liyao/) at UMass Amherst on energy cascades in nonlinear Schr¨odinger systems. Feel free to check out my [research](/research/) experience and [projects](/projects/) to see what I've been working on so far. 
 
 Outside of academics, I enjoy reading detective fiction and writing short stories.
 <br>
@@ -37,7 +37,8 @@ Outside of academics, I enjoy reading detective fiction and writing short storie
 ### Education
 Mount Holyoke College | B.A. in Mathematics   
 Sep 2023 – May 2027  
-Advisor: Prof. [Tim Chumley](https://tchumley.mtholyoke.edu)   
+Advisor: Prof. [Tim Chumley](https://tchumley.mtholyoke.edu)
+
 
 
 
