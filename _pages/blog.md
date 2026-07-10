@@ -9,7 +9,7 @@ nav_order: 1
 
 My research interests center on applied probability, scientific computing, dynamical systems, and optimization. I am particularly drawn to problems where a mathematical model has to survive contact with computation: stochastic dynamics, nonequilibrium behavior, graph algorithms, neural data, and high-dimensional numerical approximation.
 
-## Current and Recent Projects
+## Research Highlights
 
 ### Numerical Study of Energy Cascades in Nonlinear Schrödinger Systems
 
@@ -73,3 +73,30 @@ Highlights:
 - **Hudson River Undergraduate Mathematics Conference**, April 2026. Talk: "Monte Carlo Density Estimation for the Stochastic NLS Energy Cascade System."
 - **Nebraska Conference for Undergraduate Wisdom in Mathematics**, February 2026. Talk: "Optimal Fair Deployment Strategy for Electric Vehicle Charging Stations."
 - **Women in Mathematics in New England**, September 2025. Talk: "Neural Dynamics of Word Segmentation."
+
+## Projects
+
+This section collects code, simulations, and course projects from my research and applied mathematics work.
+
+<div class="projects">
+{% assign project_groups = "research|Research,applied|Applied,independent|Independent,coursework|Coursework" | split: "," %}
+{% for project_group in project_groups %}
+  {% assign group_parts = project_group | split: "|" %}
+  {% assign category = group_parts[0] %}
+  {% assign label = group_parts[1] %}
+  {% assign categorized_projects = site.projects | where: "category", category %}
+  {% assign sorted_projects = categorized_projects | sort: "importance" %}
+  {% if sorted_projects.size > 0 %}
+    <a id="{{ category }}" href="#{{ category }}">
+      <h2 class="category">{{ label }}</h2>
+    </a>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2">
+      {% for project in sorted_projects %}
+        {% include projects_horizontal.liquid %}
+      {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>

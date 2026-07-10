@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: avatar.jpg
+  image: avatar.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Mount Holyoke College</p>

@@ -7,4 +7,6 @@ dropdown: true
 children:
   - title: interests
     permalink: /interests/
+  - title: reading
+    permalink: /reading/
 ---

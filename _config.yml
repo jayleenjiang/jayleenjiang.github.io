@@ -5,7 +5,7 @@
 title: blank
 first_name: Jayleen
 middle_name:
-last_name: Jiang 江佳璐
+last_name: Jiang
 contact_note: >
   Feel free to reach out via email about research, coursework, or collaboration.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -137,7 +137,7 @@ newsletter:
 
 collections:
   books:
-    output: false  # 关闭书籍集合
+    output: true
   news:
     defaults:
       layout: post
@@ -214,6 +214,11 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: ""
+      type: "books"
+    values:
+      layout: book-review
 
 sass:
   style: compressed
@@ -246,7 +251,14 @@ jekyll-archives:
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
   books:
-    enabled: [] # 关闭书籍归档
+    enabled:
+      - year
+      - tags
+      - categories
+    permalinks:
+      year: "/books/:year/"
+      tags: "/books/tag/:name/"
+      categories: "/books/category/:name/"
 
 display_tags: [] # 不在首页显示标签
 display_categories: [] # 不在首页显示分类
