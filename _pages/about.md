@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: head.jpg
+  image: avatar.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Mount Holyoke College</p>
@@ -36,4 +36,3 @@ Outside of academics, I enjoy reading detective fiction and writing short storie
 Mount Holyoke College | B.A. in Mathematics, expected May 2027<br>
 GPA: 3.99/4.00<br>
 Advisor: Prof. [Tim Chumley](https://tchumley.mtholyoke.edu)<br>
-
