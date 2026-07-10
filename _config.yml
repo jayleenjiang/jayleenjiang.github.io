@@ -4,17 +4,17 @@
 
 title: blank
 first_name: Jayleen
-middle_name: 
+middle_name:
 last_name: Jiang
 contact_note: >
-  Feel free to reach out via email for research collaboration or academic discussions.
+  Feel free to reach out via email about research, coursework, or collaboration.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Mathematics major at Mount Holyoke College with interests in computational modeling, 
-  stochastic differential equations, and statistical analysis.
+  Mathematics undergraduate at Mount Holyoke College working across applied probability,
+  scientific computing, dynamical systems, and optimization.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: mathematics, computational modeling, statistics, machine learning, stochastic differential equations
+keywords: mathematics, applied probability, scientific computing, stochastic differential equations, dynamical systems, optimization
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 📐 # the emoji used as the favicon (可以改成你喜欢的emoji)
 
@@ -283,9 +283,9 @@ scholar:
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  altmetric: false # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
+  dimensions: false # Dimensions badge (Customization options: https://badge.dimensions.ai/)
+  google_scholar: false # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
   inspirehep: false # 物理学方向的badge，可以关闭
 
 # Filter out certain bibtex entry keywords used internally from the bib output
@@ -623,14 +623,11 @@ jekyll_get_json:
 
 jsonresume:
   - basics
-  - work
   - education
+  - work
   - publications
   - projects
-  - volunteer
   - awards
-  - certificates
   - skills
   - languages
   - interests
-  - references

@@ -1,196 +1,75 @@
 ---
-layout: default
+layout: page
 permalink: /research/
 title: research
+description: Research projects and manuscripts in applied probability, computation, and optimization.
 nav: true
 nav_order: 1
-pagination:
-  enabled: true
-  collection: posts
-  permalink: /page/:num/
-  per_page: 5
-  sort_field: date
-  sort_reverse: true
-  trail:
-    before: 1 # The number of links before the current page
-    after: 3 # The number of links after the current page
 ---
 
-<div class="post">
+My research interests center on applied probability, scientific computing, dynamical systems, and optimization. I am particularly drawn to problems where a mathematical model has to survive contact with computation: stochastic dynamics, nonequilibrium behavior, graph algorithms, neural data, and high-dimensional numerical approximation.
 
-{% assign blog_name_size = site.blog_name | size %}
-{% assign blog_description_size = site.blog_description | size %}
+## Current and Recent Projects
 
-{% if blog_name_size > 0 or blog_description_size > 0 %}
+### Numerical Study of Energy Cascades in Nonlinear Schrödinger Systems
 
-  <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
-  </div>
-  {% endif %}
+**Advisor:** Prof. [Yao Li](https://sites.google.com/umass.edu/liyao/), UMass Amherst<br>
+**Timeline:** February 2025 - present<br>
+**Code:** [jayleenjiang/nls-energy-cascade](https://github.com/jayleenjiang/nls-energy-cascade)
 
-{% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
+I study a stochastic NLS energy-cascade model in action-angle coordinates, with heat baths driving the system out of equilibrium. My work builds high-throughput Monte Carlo simulation tools for long chains and explores the nonequilibrium steady state beyond the solved three-mode case.
 
-  <div class="tag-category-list">
-    <ul class="p-0 m-0">
-      {% for tag in site.display_tags %}
-        <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
-      {% for category in site.display_categories %}
-        <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
+Highlights:
 
-{% assign featured_posts = site.posts | where: "featured", "true" %}
-{% if featured_posts.size > 0 %}
-<br>
+- Built SIMD C++ Monte Carlo integrators and histogram accumulators for stochastic NLS energy-cascade chains.
+- Characterized long-chain behavior, including local-Gibbs equilibrium in the bulk and anomalous sub-diffusive heat transport.
+- Developed neural-network Fokker-Planck and eigenfunction solvers for the three-mode system, validated against the exact Gibbs measure.
 
-<div class="container featured-posts">
-{% assign is_even = featured_posts.size | modulo: 2 %}
-<div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
-{% for post in featured_posts %}
-<div class="col mb-4">
-<a href="{{ post.url | relative_url }}">
-<div class="card hoverable">
-<div class="row g-0">
-<div class="col-md-12">
-<div class="card-body">
-<div class="float-right">
-<i class="fa-solid fa-thumbtack fa-xs"></i>
-</div>
-<h3 class="card-title text-lowercase">{{ post.title }}</h3>
-<p class="card-text">{{ post.description }}</p>
+### Cross-Spectral Image Correspondence for Industrial Robot Perception
 
-                    {% if post.external_source == blank %}
-                      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-                    {% else %}
-                      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
-                    {% endif %}
-                    {% assign year = post.date | date: "%Y" %}
+**Program:** RIPS 2026, IPAM/UCLA<br>
+**Sponsor:** Analog Devices<br>
+**Timeline:** June 2026 - August 2026
 
-                    <p class="post-meta">
-                      {{ read_time }} min read &nbsp; &middot; &nbsp;
-                      <a href="{{ year | prepend: '/blog/' | relative_url }}">
-                        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      {% endfor %}
-      </div>
-    </div>
-    <hr>
+This project studies visible-infrared image correspondence for factory robot perception. I am helping formulate evaluation protocols for feature matching under cross-spectral failure modes, including thermal hotspots, low texture, specular surfaces, and repeated structures.
 
-{% endif %}
+Highlights:
 
-  <ul class="post-list">
+- Developing a benchmark framework for classical and learned feature-matching methods.
+- Exploring matching pipelines that combine descriptor confidence, geometric consistency, and abstention criteria.
+- Focusing on reducing false correspondences in safety-critical robotic perception settings.
 
-    {% if page.pagination.enabled %}
-      {% assign postlist = paginator.posts %}
-    {% else %}
-      {% assign postlist = site.posts %}
-    {% endif %}
+### Fairness-Constrained Optimization for EV Charger Placement
 
-    {% for post in postlist %}
+**Advisor:** Prof. Ming Gu, University of California, Berkeley<br>
+**Timeline:** June 2025 - August 2025<br>
+**Code:** [jayleenjiang/EV-optimization](https://github.com/jayleenjiang/EV-optimization)
 
-    {% if post.external_source == blank %}
-      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-    {% else %}
-      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
-    {% endif %}
-    {% assign year = post.date | date: "%Y" %}
-    {% assign tags = post.tags | join: "" %}
-    {% assign categories = post.categories | join: "" %}
+I formulated EV charger placement as a multi-objective optimization problem on a weighted transportation network, balancing accessibility, utilization, and distributional fairness. The project combines demand modeling, candidate-site reduction, greedy construction, and local improvement heuristics for large-scale charger deployment.
 
-    <li>
+Highlights:
 
-{% if post.thumbnail %}
+- Integrated demographic, infrastructure, and spatial-demand signals into a charger placement framework.
+- Compared CDI-weighted, population-weighted, and uniform candidate-site strategies.
+- Built reproducibility scripts for manuscript tables, figures, and optimization results.
 
-<div class="row">
-          <div class="col-sm-9">
-{% endif %}
-        <h3>
-        {% if post.redirect == blank %}
-          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% elsif post.redirect contains '://' %}
-          <a class="post-title" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
-          <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        {% else %}
-          <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
-        {% endif %}
-      </h3>
-      <p>{{ post.description }}</p>
-      <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %d, %Y' }}
-        {% if post.external_source %}
-        &nbsp; &middot; &nbsp; {{ post.external_source }}
-        {% endif %}
-      </p>
-      <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | relative_url }}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+### Computational Neural Mechanisms of Distal Speech Rate Effects
 
-          {% if tags != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
-          {% endif %}
+**Advisor:** Prof. Ben Pittman-Polletta, Mount Holyoke College<br>
+**Timeline:** September 2024 - December 2025<br>
+**Code:** [jayleenjiang/speech-rate](https://github.com/jayleenjiang/speech-rate)
 
-          {% if categories != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
-          {% endif %}
-    </p>
+This project combines EEG/ERP analysis with computational modeling of how distal speech rate affects speech segmentation. I analyzed 128-channel EEG/ERP data and developed a semi-Markov particle filter model with rate-dependent duration priors.
 
-{% if post.thumbnail %}
+Highlights:
 
-</div>
+- Analyzed EEG/ERP data from 21 participants, focusing on early neural responses to reduced function words.
+- Built a particle-filter model for perceptual state transitions in continuous speech.
+- Connected model predictions with ERP findings to explain speech-rate-dependent word segmentation.
 
-  <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
-  </div>
-</div>
-{% endif %}
-    </li>
 
-    {% endfor %}
+## Talks
 
-  </ul>
-
-{% if page.pagination.enabled %}
-{% include pagination.liquid %}
-{% endif %}
-
-</div>
+- **Hudson River Undergraduate Mathematics Conference**, April 2026. Talk: "Monte Carlo Density Estimation for the Stochastic NLS Energy Cascade System."
+- **Nebraska Conference for Undergraduate Wisdom in Mathematics**, February 2026. Talk: "Optimal Fair Deployment Strategy for Electric Vehicle Charging Stations."
+- **Women in Mathematics in New England**, September 2025. Talk: "Neural Dynamics of Word Segmentation."

@@ -2,96 +2,94 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Jayleen Jiang
+    - name: Email
+      value: jiang37j@mtholyoke.edu
+    - name: Website
+      value: <a href="https://jayleenjiang.github.io">jayleenjiang.github.io</a>
+    - name: GitHub
+      value: <a href="https://github.com/jayleenjiang">github.com/jayleenjiang</a>
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: B.A. in Mathematics
+      institution: Mount Holyoke College
+      location: South Hadley, MA
+      year: 2023 - 2027
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - "GPA: 3.99/4.00"
+        - "Advisor: Prof. Tim Chumley"
+        - "Coursework: Probability, Optimization, Stochastic Processes, Measure Theory, Dynamical Systems, Numerical Analysis"
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Cross-Spectral Image Correspondence for Industrial Robot Perception
+      institution: University of California, Los Angeles / IPAM RIPS
+      year: 2026
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Sponsored by Analog Devices.
+        - Developed evaluation protocols for visible-infrared image correspondence in factory robot perception.
+        - Benchmarked matching methods under thermal hotspots, low texture, specular surfaces, and repeated structures.
+    - title: Numerical Study of Energy Cascades in Nonlinear Schrödinger Systems
+      institution: UMass Amherst
+      year: 2025 - Present
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Advisor: Prof. Yao Li.
+        - Built SIMD Monte Carlo integrators for stochastic NLS energy-cascade chains.
+        - Developed neural-network Fokker-Planck and eigenfunction solvers for the three-mode system.
+    - title: Fairness-Constrained Optimization for EV Charger Placement
+      institution: University of California, Berkeley
+      year: 2025
       description:
+        - Advisor: Prof. Ming Gu.
+        - Formulated EV charger deployment as a multi-objective network optimization problem.
+        - Built scalable heuristics for accessibility, utilization, and distributional fairness.
+    - title: Computational Neural Mechanisms of Distal Speech Rate Effects
+      institution: Mount Holyoke College
+      year: 2024 - 2025
+      description:
+        - Advisor: Prof. Ben Pittman-Polletta.
+        - Analyzed 128-channel EEG/ERP data from 21 participants.
+        - Developed a semi-Markov particle filter model for speech-rate-dependent word segmentation.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Teaching
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Teaching Assistant
+      institution: Mount Holyoke College
+      year: 2024 - Present
+      description:
+        - Calculus I-III, Intermediate Statistics, Mathematical Statistics, Real Analysis.
+    - title: Course Tutor
+      institution: Vision Academy
+      year: 2023
+      description:
+        - A-Level Mathematics and A-Level Advanced Mathematics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2026
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Sarah Williston Award, Mount Holyoke College.
+    - year: 2025
       items:
-        - Max Planck Medal
+        - Mildred L. Sanderson Prize for Excellence in Mathematics, Mount Holyoke College.
+        - Jennifer Landry '93 Award for Compassion in Math Education, Mount Holyoke College.
+    - year: 2024
+      items:
+        - Eleanor Graham Claus Scholarship, Mount Holyoke College.
+        - Vong-ling Lee Scholarship, Mount Holyoke College.
 
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Programming
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Python, C++, R, MATLAB, NetLogo.
+        - PyTorch, OpenMP, numerical simulation, data analysis.
+    - title: Languages
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Mandarin Chinese (native), English (fluent), French (conversational).

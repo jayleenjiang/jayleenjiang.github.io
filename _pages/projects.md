@@ -2,12 +2,14 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Code, simulations, and course projects from my research and applied mathematics work.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [research, applied, independent, coursework]
 horizontal: false
 ---
+
+This page collects projects that have code, reproducible experiments, or a self-contained modeling component. Some details are still in progress and will be expanded as I clean up notes, figures, and manuscripts.
 
 <!-- pages/projects.md -->
 <div class="projects">

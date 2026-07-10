@@ -10,8 +10,8 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Mount Holyoke College</p>
-    <p>50 College St.</p>
-    <p>South Hadley, MA 01075</p>
+    <p>South Hadley, MA</p>
+    <p>jiang37j@mtholyoke.edu</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -25,21 +25,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I am Jayleen, and I am a junior majoring in Mathematics at  [Mount Holyoke College](https://www.mtholyoke.edu). You can view my cv here. 
+Hi! I am Jayleen, a rising senior majoring in [Mathematics](https://www.mtholyoke.edu/academics/find-your-program/mathematics) at [Mount Holyoke College](https://www.mtholyoke.edu). My work sits at the intersection of applied probability, scientific computing, dynamical systems, and optimization.
 
-I'm exploring my interests in applied mathematics and computational science, particularly in applied probability, partial differential equations, and dynamical systems. 
-
-I'm planning to apply for PhD programs in (Applied) Mathematics starting in Fall 2027. Currently, I'm working with Professor [Yao Li](https://sites.google.com/umass.edu/liyao/) at UMass Amherst on energy cascades in nonlinear Schr¨odinger systems. Feel free to check out my [research](/research/) experience and [projects](/projects/) to see what I've been working on so far. 
+I have worked on computational study energy cascades in nonlinear Schrödinger models, fairness-constrained optimization, and computational models of speech segmentation. You can view my [CV](/assets/pdf/Jayleen_Jiang_CV.pdf) or find selected code on [GitHub](https://github.com/jayleenjiang).
 
 Outside of academics, I enjoy reading detective fiction and writing short stories.
 <br>
 
 ### Education
-Mount Holyoke College | B.A. in Mathematics   
-Sep 2023 – May 2027  
-Advisor: Prof. [Tim Chumley](https://tchumley.mtholyoke.edu)
-
-
-
-
+Mount Holyoke College | B.A. in Mathematics, expected May 2027<br>
+GPA: 3.99/4.00<br>
+Advisor: Prof. [Tim Chumley](https://tchumley.mtholyoke.edu)<br>
 

@@ -1,13 +1,10 @@
 ---
-layout: book-shelf
-title: bookshelf
-permalink: /books/
+layout: page
+title: interests
+permalink: /interests/
 nav: false
-collection: books
 ---
 
-> What an astonishing thing a book is. It's a flat object made from a tree with flexible parts on which are imprinted lots of funny dark squiggles. But one glance at it and you're inside the mind of another person, maybe somebody dead for thousands of years. Across the millennia, an author is speaking clearly and silently inside your head, directly to you. Writing is perhaps the greatest of human inventions, binding together people who never knew each other, citizens of distant epochs. Books break the shackles of time. A book is proof that humans are capable of working magic.
->
-> -- Carl Sagan, Cosmos, Part 11: The Persistence of Memory (1980)
+Outside of mathematics, I like reading detective fiction and writing short stories. I am still deciding how much of this part of the site should become a reading log, a short-story archive, or a small space for notes that do not quite belong on the research pages.
 
-## Books that I am reading, have read, or will read
+For now, this page is a clean home for the non-academic side of the website. I will fill in more specific reading and writing notes later.
