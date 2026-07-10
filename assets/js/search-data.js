@@ -11,21 +11,28 @@ ninja.data = [{
     },
   },{id: "nav-research",
           title: "research",
-          description: "",
+          description: "Research projects and manuscripts in applied probability, computation, and optimization.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Code, simulations, and course projects from my research and applied mathematics work.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-ta",
-          title: "TA",
-          description: "Materials for courses you taught. Replace this text with your description.",
+        },{id: "nav-cv",
+          title: "cv",
+          description: "A web version of my CV. The PDF version is available from the icon on this page.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-teaching",
+          title: "teaching",
+          description: "Teaching assistant and tutoring experience.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/TA/";
@@ -35,91 +42,85 @@ ninja.data = [{
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/books/";
+                window.location.href = "/interests/";
               },
-            },{id: "dropdown-photos",
-              title: "photos",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/blog/";
-              },
-            },{id: "books-the-godfather",
-          title: 'The Godfather',
+            },{id: "news-i-received-the-mildred-l-sanderson-prize-for-excellence-in-mathematics-and-the-jennifer-landry-93-award-for-compassion-in-math-education-at-mount-holyoke-college",
+          title: 'I received the Mildred L. Sanderson Prize for Excellence in Mathematics and the...',
           description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-attended-the-women-in-mathematics-in-new-england-2025-conference-and-gave-a-talk-about-my-work-on-neural-dynamics-of-word-segmentation",
-          title: 'I attended the Women in Mathematics in New England 2025 conference and gave...',
+          section: "News",},{id: "news-i-attended-women-in-mathematics-in-new-england-2025-and-presented-work-on-neural-dynamics-of-word-segmentation",
+          title: 'I attended Women in Mathematics in New England 2025 and presented work on...',
           description: "",
-          section: "News",},{id: "news-i-finished-all-my-finals-in-fall-2025-️",
-          title: 'I finished all my finals in Fall 2025 ! ✌️',
+          section: "News",},{id: "news-i-gave-a-talk-at-the-nebraska-conference-for-undergraduate-wisdom-in-mathematics-on-fair-deployment-strategies-for-electric-vehicle-charging-stations",
+          title: 'I gave a talk at the Nebraska Conference for Undergraduate Wisdom in Mathematics...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "news-i-gave-a-talk-at-the-hudson-river-undergraduate-mathematics-conference-on-monte-carlo-density-estimation-for-the-stochastic-nls-energy-cascade-system",
+          title: 'I gave a talk at the Hudson River Undergraduate Mathematics Conference on Monte...',
+          description: "",
+          section: "News",},{id: "news-i-started-the-rips-2026-program-at-ucla-institute-for-pure-amp-amp-applied-mathematics-working-on-cross-spectral-image-correspondence-for-industrial-robot-perception",
+          title: 'I started the RIPS 2026 program at UCLA,Institute for Pure &amp;amp;amp; Applied Mathematics,...',
+          description: "",
+          section: "News",},{id: "projects-costly-cooperative-behavior",
+          title: 'Costly Cooperative Behavior',
+          description: "ODE and agent-based simulations for costly cooperation, kin recognition, and group selection.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/altruism-simulation/";
+            },},{id: "projects-cross-spectral-image-correspondence",
+          title: 'Cross-Spectral Image Correspondence',
+          description: "Visible-infrared feature matching and evaluation protocols for industrial robot perception.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/cross-spectral-correspondence/";
+            },},{id: "projects-ev-charger-placement-optimization",
+          title: 'EV Charger Placement Optimization',
+          description: "Multi-objective optimization for fair and accessible EV charging station deployment in Seattle.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+              window.location.href = "/projects/ev-optimization/";
+            },},{id: "projects-kepler-sde-numerical-diagnostics",
+          title: 'Kepler/SDE Numerical Diagnostics',
+          description: "Numerical experiments for stochastic differential equations and nonlinear dynamics diagnostics.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+              window.location.href = "/projects/kepler-sde/";
+            },},{id: "projects-nls-energy-cascade",
+          title: 'NLS Energy Cascade',
+          description: "SIMD Monte Carlo and Fokker-Planck solvers for stochastic nonlinear Schrödinger energy cascades.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+              window.location.href = "/projects/nls-energy-cascade/";
+            },},{id: "projects-distal-speech-rate-effects",
+          title: 'Distal Speech Rate Effects',
+          description: "EEG/ERP analysis and particle-filter modeling of speech-rate-dependent word segmentation.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+              window.location.href = "/projects/speech-rate/";
+            },},{id: "projects-stochastic-mobility-based-sirs-model",
+          title: 'Stochastic Mobility-Based SIRS Model',
+          description: "CTMC, ODE, and diffusion approximations for epidemic dynamics with mobility heterogeneity.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/stochastic-mobility-sirs/";
             },},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/example_pdf.pdf", "_blank");
+          window.open("/assets/pdf/Jayleen_Jiang_CV.pdf", "_blank");
         },
       },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%6A%69%61%6E%67%33%37%6A@%6D%74%68%6F%6C%79%6F%6B%65.%65%64%75", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://github.com/jayleenjiang", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/jialujiang", "_blank");
         },
       },{
         id: 'social-rss',
@@ -127,20 +128,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
