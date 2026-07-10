@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Code, simulations, and course projects from my research and applied mathematics work.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "nav-cv",
           title: "cv",
           description: "A web version of my CV. The PDF version is available from the icon on this page.",
@@ -30,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "Teaching assistant and tutoring experience.",
+        },{id: "nav-tutoring",
+          title: "tutoring",
+          description: "Tutoring, teaching assistant, and course support experience.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/TA/";
+            window.location.href = "/tutoring/";
           },
         },{id: "dropdown-interests",
               title: "interests",
@@ -43,6 +36,13 @@ ninja.data = [{
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/interests/";
+              },
+            },{id: "dropdown-reading",
+              title: "reading",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/reading/";
               },
             },{id: "news-i-received-the-mildred-l-sanderson-prize-for-excellence-in-mathematics-and-the-jennifer-landry-93-award-for-compassion-in-math-education-at-mount-holyoke-college",
           title: 'I received the Mildred L. Sanderson Prize for Excellence in Mathematics and the...',
