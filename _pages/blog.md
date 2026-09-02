@@ -1,15 +1,15 @@
 ---
 layout: page
-permalink: /research/
-title: research
-description: Research projects and manuscripts in applied probability, computation, and optimization.
+permalink: /projects/
+title: projects
+description: Projects and manuscripts in applied probability, computation, and optimization.
 nav: true
 nav_order: 1
 ---
 
-My research interests center on applied probability, scientific computing, dynamical systems, and optimization. I am particularly drawn to problems where a mathematical model has to survive contact with computation: stochastic dynamics, nonequilibrium behavior, graph algorithms, neural data, and high-dimensional numerical approximation.
+My work centers on applied probability, scientific computing, dynamical systems, and optimization. I am particularly drawn to problems where a mathematical model has to survive contact with computation: stochastic dynamics, nonequilibrium behavior, graph algorithms, neural data, and high-dimensional numerical approximation.
 
-## Research Highlights
+## Featured Projects
 
 ### Numerical Study of Energy Cascades in Nonlinear Schrödinger Systems
 
@@ -74,12 +74,12 @@ Highlights:
 - **Nebraska Conference for Undergraduate Wisdom in Mathematics**, February 2026. Talk: "Optimal Fair Deployment Strategy for Electric Vehicle Charging Stations."
 - **Women in Mathematics in New England**, September 2025. Talk: "Neural Dynamics of Word Segmentation."
 
-## Projects
+## Project Gallery
 
 This section collects code, simulations, and course projects from my research and applied mathematics work.
 
 <div class="projects">
-{% assign project_groups = "research|Research,applied|Applied,independent|Independent,coursework|Coursework" | split: "," %}
+{% assign project_groups = "research|Research Projects,applied|Applied,independent|Independent,coursework|Coursework" | split: "," %}
 {% for project_group in project_groups %}
   {% assign group_parts = project_group | split: "|" %}
   {% assign category = group_parts[0] %}

@@ -27,7 +27,7 @@ latest_posts:
 
 Hi! I am Jayleen, a senior undergraduate studying [Mathematics](https://www.mtholyoke.edu/academics/find-your-program/mathematics) at [Mount Holyoke College](https://www.mtholyoke.edu). I am interested in applied mathematics and computational science, especially in stochastic dynamics and the mathematical foundation of machine learning methods.
 
-So far I have worked on a computational study of energy cascades in stochastic nonlinear Schrödinger models, fairness-constrained optimization, and computational models of speech segmentation. You can find more in [projects].
+So far I have worked on a computational study of energy cascades in stochastic nonlinear Schrödinger models, fairness-constrained optimization, and computational models of speech segmentation. You can find more on the [projects page]({{ '/projects/' | relative_url }}).
 
 Through the [Five College](https://www.fivecolleges.edu/) system, I have had the opportunity to take graduate-level courses and conduct research with faculty at [UMass Amherst](https://www.umass.edu/). I am currently writing my honors thesis under the supervision of Professor [Yao Li](https://sites.google.com/umass.edu/liyao/).
 
@@ -39,4 +39,3 @@ I am from Anhui, China, and my Chinese name is 江佳璐. Outside of math I enjo
 
 Mount Holyoke College | B.A. in Mathematics, expected May 2027<br>
 Advisor: Prof. [Tim Chumley](https://tchumley.mtholyoke.edu)<br>
-
