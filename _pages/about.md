@@ -25,14 +25,18 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I am Jayleen, a rising senior majoring in [Mathematics](https://www.mtholyoke.edu/academics/find-your-program/mathematics) at [Mount Holyoke College](https://www.mtholyoke.edu). My work sits at the intersection of applied probability, scientific computing, dynamical systems, and optimization.
+Hi! I am Jayleen, a senior undergraduate studying [Mathematics](https://www.mtholyoke.edu/academics/find-your-program/mathematics) at [Mount Holyoke College](https://www.mtholyoke.edu). I am interested in applied mathematics and computational science, especially in stochastic dynamics and machine learning for scientific problems.
 
-I have worked on computational study energy cascades in nonlinear Schrödinger models, fairness-constrained optimization, and computational models of speech segmentation. You can view my [CV](/assets/pdf/Jayleen_Jiang_CV.pdf) or find selected code on [GitHub](https://github.com/jayleenjiang).
+So far I have worked on a computational study of energy cascades in stochastic nonlinear Schrödinger models, fairness-constrained optimization, and computational models of speech segmentation. You can find more in [projects].
 
-Outside of academics, I enjoy reading detective fiction and writing short stories.
+Through the [Five College](https://www.fivecolleges.edu/) system, I have had the opportunity to take graduate-level courses and conduct research with faculty at UMass Amherst. I am currently writing my honors thesis under the supervision of Professor [Yao Li](https://sites.google.com/umass.edu/liyao/).
+
+I am from Anhui, China, and my Chinese name is 江佳璐. Outside of math I watch a lot of movies, read fiction, and write stories.
+
 <br>
 
 ### Education
+
 Mount Holyoke College | B.A. in Mathematics, expected May 2027<br>
-GPA: 3.99/4.00<br>
 Advisor: Prof. [Tim Chumley](https://tchumley.mtholyoke.edu)<br>
+
