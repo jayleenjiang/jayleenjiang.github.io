@@ -25,13 +25,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I am Jayleen, a senior undergraduate studying [Mathematics](https://www.mtholyoke.edu/academics/find-your-program/mathematics) at [Mount Holyoke College](https://www.mtholyoke.edu). I am interested in applied mathematics and computational science, especially in stochastic dynamics and machine learning for scientific problems.
+Hi! I am Jayleen, a senior undergraduate studying [Mathematics](https://www.mtholyoke.edu/academics/find-your-program/mathematics) at [Mount Holyoke College](https://www.mtholyoke.edu). I am interested in applied mathematics and computational science, especially in stochastic dynamics and the mathematical foundation of machine learning methods.
 
 So far I have worked on a computational study of energy cascades in stochastic nonlinear Schrödinger models, fairness-constrained optimization, and computational models of speech segmentation. You can find more in [projects].
 
-Through the [Five College](https://www.fivecolleges.edu/) system, I have had the opportunity to take graduate-level courses and conduct research with faculty at UMass Amherst. I am currently writing my honors thesis under the supervision of Professor [Yao Li](https://sites.google.com/umass.edu/liyao/).
+Through the [Five College](https://www.fivecolleges.edu/) system, I have had the opportunity to take graduate-level courses and conduct research with faculty at [UMass Amherst](https://www.umass.edu/). I am currently writing my honors thesis under the supervision of Professor [Yao Li](https://sites.google.com/umass.edu/liyao/).
 
-I am from Anhui, China, and my Chinese name is 江佳璐. Outside of math I watch a lot of movies, read fiction, and write stories.
+I am from Anhui, China, and my Chinese name is 江佳璐. Outside of math I enjoy watching movies, reading fiction, and writing stories.
 
 <br>
 
