@@ -9,19 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-research",
-          title: "research",
-          description: "Research projects and manuscripts in applied probability, computation, and optimization.",
+  },{id: "nav-projects",
+          title: "projects",
+          description: "Projects and manuscripts in applied probability, computation, and optimization.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/research/";
-          },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "A web version of my CV. The PDF version is available from the icon on this page.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/projects/";
           },
         },{id: "nav-tutoring",
           title: "tutoring",
@@ -95,13 +88,6 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/stochastic-mobility-sirs/";
             },},{
-        id: 'social-cv',
-        title: 'CV',
-        section: 'Socials',
-        handler: () => {
-          window.open("/assets/pdf/Jayleen_Jiang_CV.pdf", "_blank");
-        },
-      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
