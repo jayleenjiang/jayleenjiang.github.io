@@ -3,64 +3,47 @@ layout: page
 ---
 
 {% assign collection = site[page.collection] | sort: 'date' | reverse %}
-{% assign books_by_year = collection | group_by_exp: 'book', 'book.date | date: "%Y"' %}
 
 <header class="bookshelf-header">
   {{ content }}
   <p class="bookshelf-count">{{ collection.size }} books with a rating or note</p>
 </header>
 
-<div class="bookshelf-years">
-  {% for year in books_by_year %}
-    <section class="bookshelf-year" aria-labelledby="bookshelf-year-{{ year.name }}">
-      <h2 id="bookshelf-year-{{ year.name }}" class="bookshelf-year-heading">
-        <a href="{{ year.name | prepend: '/books/' | relative_url }}">{{ year.name }}</a>
-        <span>{{ year.items.size }}</span>
-      </h2>
+<div class="bookshelf-grid">
+  {% for item in collection %}
+    <article class="bookshelf-book">
+      <a class="bookshelf-book-link" href="{{ item.url | relative_url }}" aria-label="Open {{ item.title }}">
+        <div class="bookshelf-cover-frame">
+          {% if item.cover %}
+            <img src="{{ item.cover | relative_url }}" alt="Cover of {{ item.title }}" loading="lazy" decoding="async">
+          {% elsif item.olid %}
+            <img
+              src="https://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false"
+              alt="Cover of {{ item.title }}"
+              loading="lazy"
+              decoding="async"
+            >
+          {% elsif item.isbn %}
+            <img
+              src="https://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false"
+              alt="Cover of {{ item.title }}"
+              loading="lazy"
+              decoding="async"
+            >
+          {% endif %}
+          <span class="bookshelf-status">Read</span>
+        </div>
 
-      <div class="bookshelf-grid">
-        {% for item in year.items %}
-          <article class="bookshelf-book">
-            <a class="bookshelf-book-link" href="{{ item.url | relative_url }}" aria-label="Open {{ item.title }}">
-              <div class="bookshelf-cover-frame">
-                {% if item.cover %}
-                  <img
-                    src="{{ item.cover | relative_url }}"
-                    alt="Cover of {{ item.title }}"
-                    loading="lazy"
-                    decoding="async"
-                  >
-                {% elsif item.olid %}
-                  <img
-                    src="https://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false"
-                    alt="Cover of {{ item.title }}"
-                    loading="lazy"
-                    decoding="async"
-                  >
-                {% elsif item.isbn %}
-                  <img
-                    src="https://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false"
-                    alt="Cover of {{ item.title }}"
-                    loading="lazy"
-                    decoding="async"
-                  >
-                {% endif %}
-                <span class="bookshelf-status">Read</span>
-              </div>
-
-              <div class="bookshelf-rating" aria-label="{{ item.stars }} out of 5 stars">
-                {% assign full_stars = item.stars | default: 0 | floor %}
-                {% assign empty_stars = 5 | minus: full_stars %}
-                {% for i in (1..full_stars) -%}<i class="fa-solid fa-star" aria-hidden="true"></i>{%- endfor -%}
-                {% for i in (1..empty_stars) -%}<i class="fa-regular fa-star" aria-hidden="true"></i>{%- endfor %}
-              </div>
-              <h3>{{ item.title }}</h3>
-              {% if item.author %}<p>{{ item.author }}</p>{% endif %}
-            </a>
-          </article>
-        {% endfor %}
-      </div>
-    </section>
+        <div class="bookshelf-rating" aria-label="{{ item.stars }} out of 5 stars">
+          {% assign full_stars = item.stars | default: 0 | floor %}
+          {% assign empty_stars = 5 | minus: full_stars %}
+          {% for i in (1..full_stars) -%}<i class="fa-solid fa-star" aria-hidden="true"></i>{%- endfor -%}
+          {% for i in (1..empty_stars) -%}<i class="fa-regular fa-star" aria-hidden="true"></i>{%- endfor %}
+        </div>
+        <h3>{{ item.title }}</h3>
+        {% if item.author %}<p>{{ item.author }}</p>{% endif %}
+      </a>
+    </article>
   {% endfor %}
 </div>
 
@@ -77,32 +60,6 @@ layout: page
   .bookshelf-count {
     color: var(--global-text-color-light);
     font-size: 0.9rem;
-  }
-
-  .bookshelf-years {
-    display: grid;
-    gap: 3rem;
-  }
-
-  .bookshelf-year-heading {
-    align-items: baseline;
-    border-bottom: 1px solid var(--global-divider-color);
-    display: flex;
-    font-size: 1.35rem;
-    justify-content: space-between;
-    letter-spacing: 0;
-    margin-bottom: 1.25rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .bookshelf-year-heading a {
-    color: var(--global-text-color);
-  }
-
-  .bookshelf-year-heading span {
-    color: var(--global-text-color-light);
-    font-size: 0.8rem;
-    font-weight: 400;
   }
 
   .bookshelf-grid {
