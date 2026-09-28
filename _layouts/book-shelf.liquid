@@ -1,49 +1,212 @@
 ---
 layout: page
 ---
-{{ content }}
 
-{% if page.collection and page.collection.size > 0 %}
-  {% assign collection = site[page.collection] %}
-  {% if collection and collection.size > 0 %}
-    {% for item in collection reversed %}
-      {% assign current_year = item.date | date: '%Y' %}
-      {% if current_year != year %}
-        {% unless forloop.first %}
-          </ul>
-        {% endunless %}
-        <h1 id="y{{item.date | date: "%Y"}}">
-          <a href="{{ current_year | prepend: '/books/' | relative_url }}">{{ current_year }}</a>
-        </h1>
-        <ul>
-          {% assign year = current_year %}
-      {% endif %}
+{% assign collection = site[page.collection] | sort: 'date' | reverse %}
+{% assign books_by_year = collection | group_by_exp: 'book', 'book.date | date: "%Y"' %}
 
-      <figure class="cover">
-        <a class="cover-link" href="{{ item.url | relative_url }}">
-          {% if item.cover %}
-            <img alt="{{ item.title }} cover" src="{{ item.cover | prepend: page.covers | relative_url }}" style="height:200px">
-          {% elsif item.olid %}
-            <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false" style="height:200px">
-          {% elsif item.isbn %}
-            <img alt="{{ item.title }} cover" src="http://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false" style="height:200px">
-          {% endif %}
-          {% if item.status %}
-            {% assign statuses = 'abandoned,finished,interested,paused,queued,reading,reread' | split: ',' %}
-            {% assign status = item.status | downcase | strip %}
-            {% if statuses contains status %}
-              <figcaption class="{{ status | downcase }}">{{ status | upcase }}</figcaption>
-            {% else %}
-              <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
-            {% endif %}
-          {% else %}
-            <figcaption class="uncategorized">UNCATEGORIZED</figcaption>
-          {% endif %}
-        </a>
-      </figure>
-      {% if forloop.last %}
-        </ul>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-{% endif %}
+<header class="bookshelf-header">
+  {{ content }}
+  <p class="bookshelf-count">{{ collection.size }} books with a rating or note</p>
+</header>
+
+<div class="bookshelf-years">
+  {% for year in books_by_year %}
+    <section class="bookshelf-year" aria-labelledby="bookshelf-year-{{ year.name }}">
+      <h2 id="bookshelf-year-{{ year.name }}" class="bookshelf-year-heading">
+        <a href="{{ year.name | prepend: '/books/' | relative_url }}">{{ year.name }}</a>
+        <span>{{ year.items.size }}</span>
+      </h2>
+
+      <div class="bookshelf-grid">
+        {% for item in year.items %}
+          <article class="bookshelf-book">
+            <a class="bookshelf-book-link" href="{{ item.url | relative_url }}" aria-label="Open {{ item.title }}">
+              <div class="bookshelf-cover-frame">
+                {% if item.cover %}
+                  <img
+                    src="{{ item.cover | relative_url }}"
+                    alt="Cover of {{ item.title }}"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                {% elsif item.olid %}
+                  <img
+                    src="https://covers.openlibrary.org/b/olid/{{ item.olid }}-L.jpg?default=false"
+                    alt="Cover of {{ item.title }}"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                {% elsif item.isbn %}
+                  <img
+                    src="https://covers.openlibrary.org/b/isbn/{{ item.isbn }}-L.jpg?default=false"
+                    alt="Cover of {{ item.title }}"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                {% endif %}
+                <span class="bookshelf-status">Read</span>
+              </div>
+
+              <div class="bookshelf-rating" aria-label="{{ item.stars }} out of 5 stars">
+                {% assign full_stars = item.stars | default: 0 | floor %}
+                {% assign empty_stars = 5 | minus: full_stars %}
+                {% for i in (1..full_stars) -%}<i class="fa-solid fa-star" aria-hidden="true"></i>{%- endfor -%}
+                {% for i in (1..empty_stars) -%}<i class="fa-regular fa-star" aria-hidden="true"></i>{%- endfor %}
+              </div>
+              <h3>{{ item.title }}</h3>
+              {% if item.author %}<p>{{ item.author }}</p>{% endif %}
+            </a>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>
+
+<style>
+  .bookshelf-header {
+    max-width: 46rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .bookshelf-header > p:first-child {
+    margin-bottom: 0.65rem;
+  }
+
+  .bookshelf-count {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+  }
+
+  .bookshelf-years {
+    display: grid;
+    gap: 3rem;
+  }
+
+  .bookshelf-year-heading {
+    align-items: baseline;
+    border-bottom: 1px solid var(--global-divider-color);
+    display: flex;
+    font-size: 1.35rem;
+    justify-content: space-between;
+    letter-spacing: 0;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .bookshelf-year-heading a {
+    color: var(--global-text-color);
+  }
+
+  .bookshelf-year-heading span {
+    color: var(--global-text-color-light);
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .bookshelf-grid {
+    display: grid;
+    gap: 2rem 1.15rem;
+    grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+  }
+
+  .bookshelf-book,
+  .bookshelf-book-link {
+    min-width: 0;
+  }
+
+  .bookshelf-book-link {
+    color: var(--global-text-color);
+    display: block;
+    height: 100%;
+  }
+
+  .bookshelf-book-link:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+
+  .bookshelf-cover-frame {
+    aspect-ratio: 2 / 3;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .bookshelf-cover-frame img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 180ms ease;
+    width: 100%;
+  }
+
+  .bookshelf-book-link:hover .bookshelf-cover-frame img {
+    transform: scale(1.025);
+  }
+
+  .bookshelf-status {
+    background: rgba(20, 24, 28, 0.82);
+    bottom: 0.45rem;
+    color: #fff;
+    font-size: 0.62rem;
+    font-weight: 700;
+    left: 0.45rem;
+    line-height: 1;
+    padding: 0.35rem 0.45rem;
+    position: absolute;
+    text-transform: uppercase;
+  }
+
+  .bookshelf-rating {
+    color: var(--global-theme-color);
+    font-size: 0.68rem;
+    height: 1rem;
+    margin-top: 0.65rem;
+    white-space: nowrap;
+  }
+
+  .bookshelf-rating i + i {
+    margin-left: 0.12rem;
+  }
+
+  .bookshelf-book h3 {
+    display: -webkit-box;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.35;
+    margin: 0.25rem 0 0;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .bookshelf-book p {
+    color: var(--global-text-color-light);
+    display: -webkit-box;
+    font-size: 0.75rem;
+    line-height: 1.35;
+    margin: 0.25rem 0 0;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  @media (max-width: 575px) {
+    .bookshelf-grid {
+      gap: 1.6rem 0.8rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .bookshelf-book h3 {
+      font-size: 0.8rem;
+    }
+
+    .bookshelf-book p {
+      display: none;
+    }
+  }
+</style>
