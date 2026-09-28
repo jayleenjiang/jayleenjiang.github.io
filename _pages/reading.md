@@ -6,4 +6,4 @@ nav: false
 collection: books
 ---
 
-Books I have rated or reviewed on Douban, arranged by the year I read them. Ratings and reading dates are preserved from my original log; notes remain in the language in which I wrote them.
+Books I have rated or reviewed on Douban, arranged by the year I read them. This shelf uses verified English-language editions and English translations of my original notes; books without a corresponding English edition are omitted.
